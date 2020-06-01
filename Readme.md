@@ -22,8 +22,11 @@ For bacon, I calculated the degree of friendship between two user IDs by using B
 Technologies used:
 
 Lombok for getters and setters
+
 Maven for project dependencies
+
 Jersey for developing RESTful webservice
+
 Jetty provides a web server
 
 How to run:
@@ -42,6 +45,7 @@ mvn -f pom.standalone.xml clean package
 #To see usage
 
 cd target; java -jar HouseParty-jar-with-dependencies.jar
+
 cd ..
 
 read -p "Press enter to continue"
@@ -49,20 +53,29 @@ read -p "Press enter to continue"
 #To see friend list
 
 cd target; java -jar HouseParty-jar-with-dependencies.jar ../src/main/resources/friends.txt 4vYVN+FxwNM=
+
 cd ..
+
 cat target/friends.json
+
 read -p "Press enter to continue"
 
 #To see mutual friend list
 
 cd target; java -jar HouseParty-jar-with-dependencies.jar ../src/main/resources/friends.txt 4vYVN+FxwNM= GKYV7NODVj4=
+
 cd ..
+
 cat target/mutuals.json
+
 read -p "Press enter to continue"
 
 #Bacon assignment
 
 cd target; java -jar HouseParty-jar-with-dependencies.jar ../src/main/resources/friends.txt 4vYVN+FxwNM= GKYV7NODVj4= bacon
+
 cd ..
+
 cat target/bacon.json
+
 read -p "Press enter to continue"
